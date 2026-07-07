@@ -17,7 +17,7 @@ const getUserOrCreate = async (req, res) => {
 }
 
 //get the message history in the getUserOrCreate function
-const message = async (req, res) => {
+const getMessage = async (req, res) => {
     try{
         const {particiantsId} = req.params;
 
@@ -82,4 +82,4 @@ const getUnreadCounts = async (req, res) => {
     }
 }
 
-module.exports ={getUserOrCreate, message, getUnreadCounts}
+module.exports ={getUserOrCreate, getMessage, getUnreadCounts}
