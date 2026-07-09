@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../public')))
 
-app.use('/api', authRouter)
+app.use('/auth', authRouter)
 
 module.exports = app;
 
